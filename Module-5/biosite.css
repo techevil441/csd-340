@@ -1,0 +1,122 @@
+header {
+    border: 5px solid #ddd;
+    padding: 20px;
+    height: 100px;
+    background: linear-gradient(to left, #ffffff, #797979);
+    width: 100%;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  h1 {
+    font-size: 72px;
+    font-family: Copperplate, Copperplate Gothic Bold, sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+    width: 50%;
+    max-width: 500px;
+  }
+  
+  h2 {
+    font-size: 56px;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    color: #0077c0;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-grow: 1;
+    width: 50%;
+    max-width: 500px;
+  }
+  .content {
+    display: flex;
+    border: 5px solid #797979;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .bio {
+    width: 60%;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+  
+  h3 {
+    color: #0077c0;
+    font-size: 24px;
+  }
+
+ 
+  .image {
+    width: 40%;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .second-section {
+    display: flex;
+    border: 5px solid #797979;
+    margin: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .second-section .text {
+    width: 70%;
+  }
+  
+  .second-section .text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .second-section .text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .second-section .images {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .second-section .images img {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b6ea1;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #6b6ea1;
+  }
+        
