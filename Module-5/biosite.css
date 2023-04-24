@@ -1,15 +1,11 @@
-header {
-    border: 5px solid #ddd;
-    padding: 20px;
-    height: 100px;
-    background: linear-gradient(to left, #ffffff, #797979);
-    width: 100%;
+  .header-content {
+    position: relative;
   }
   
-  .header-content {
-    display: flex;
-    align-items: center;
+  .header-image {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   
   h1 {
