@@ -63,9 +63,12 @@ header {
   }
   
   #movies th {
+  background-color: #003366;
+  color: white;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
+  border: 1px solid #ddd;
   }
   
   #movies td {
@@ -103,15 +106,7 @@ header {
     font-size: 25px;
     margin-bottom: 0px;
   }
-  
-  #movies th {
-    background-color: #003366;
-    color: white;
-    text-align: left;
-    padding: 12px 8px;
-    border: 1px solid #ddd;
-  }
-  
+
 body {
   margin: 0;
   padding: 0;
