@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name ="description"
+        content="This is JavaScript Exercise assignment in module 10"/>
+    <meta http-equiv="author"
+        content="Michael Tracy" />
+    <meta http-equiv="Written on"
+        content="Sunday, 21 may 2023" />
+    <link rel="stylesheet" href="Tracy_Mod10.3.css">
+    <script>
+        function displayRegularImage(element) {
+          var image = element.querySelector("img");
+          var regularSrc = image.getAttribute("data-regular-src");
+          image.src = regularSrc;
+        }
+    
+        function displayEnhancedImage(element) {
+          var image = element.querySelector("img");
+          var enhancedSrc = image.getAttribute("data-enhanced-src");
+          image.src = enhancedSrc;
+        }
+      </script>
+    
+    </head>
+
+    <body>
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+        <h2>These are photographs from one of my older Ghost hunts. Hover the mouse over each image to see the enhanced version of the photo!</h2>
+        <div id="gallery">
+          <div class="photo-container">
+            <a href="#" onmouseover="displayEnhancedImage(this);" onmouseout="displayRegularImage(this);">
+              <img class="photo" src="pics/pic1.jpg" alt="Image 1" data-regular-src="pics/pic1.jpg" data-enhanced-src="pics/pic1_e.jpg">
+            </a>
+          </div>
+          <div class="photo-container">
+            <a href="#" onmouseover="displayEnhancedImage(this);" onmouseout="displayRegularImage(this);">
+              <img class="photo" src="pics/pic2.jpg" alt="Image 2" data-regular-src="pics/pic2.jpg" data-enhanced-src="pics/pic2_e.jpg">
+            </a>
+          </div>
+          <div class="photo-container">
+            <a href="#" onmouseover="displayEnhancedImage(this);" onmouseout="displayRegularImage(this);">
+              <img class="photo" src="pics/pic3.jpg" alt="Image 3" data-regular-src="pics/pic3.jpg" data-enhanced-src="pics/pic3_e.jpg">
+            </a>
+          </div>
+          <div class="photo-container">
+            <a href="#" onmouseover="displayEnhancedImage(this);" onmouseout="displayRegularImage(this);">
+              <img class="photo" src="pics/pic4.jpg" alt="Image 4" data-regular-src="pics/pic4.jpg" data-enhanced-src="pics/pic4_e.jpg">
+            </a>
+          </div>
+        </div>
+        <script>
+            function displayImage(imageFile) {
+              var largerImage = document.getElementById("mainImage");
+              largerImage.src = imageFile;
+            }
+          </script>
+          <div class = "centered">
+         <a class = "button" href="https://techevil441.github.io/csd-340/">Back to Class Landing Page</a>
+         </div>
+      </body>
+      </html>
