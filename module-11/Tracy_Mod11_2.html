@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name ="description"
+        content="This is JavaScript Exercise assignment in module 11"/>
+    <meta http-equiv="author"
+        content="Michael Tracy" />
+    <meta http-equiv="Written on"
+        content="Sunday, 28 may 2023" />
+    <link rel="stylesheet" href="Tracy_Mod11_2.css">
+    <script>
+var tasks = [];
+var taskCount = 1; // Variable to keep track of the task count
+
+function addTask() {
+    var taskInput = document.getElementById("taskInput");
+    var task = taskInput.value.trim();
+    
+    if (task !== "") {
+        tasks.push(task);
+        alert("Task added successfully!");
+        taskInput.value = "";
+    } else {
+        alert("Please enter a valid task.");
+    }
+}
+
+function deleteEntry() {
+    var deleteOption = prompt("Enter 'last' to delete the last entry or enter the task number to delete:");
+
+    if (deleteOption === "last") {
+        if (tasks.length > 0) {
+            var deletedTask = tasks.pop();
+            alert("Deleted task: " + deletedTask);
+        } else {
+            alert("No tasks to delete.");
+        }
+    } else if (deleteOption !== null && deleteOption !== "") {
+        var taskNumber = parseInt(deleteOption);
+        if (!isNaN(taskNumber) && taskNumber >= 1 && taskNumber <= tasks.length) {
+            var deletedTask = tasks.splice(taskNumber - 1, 1)[0];
+            alert("Deleted task: " + deletedTask);
+        } else {
+            alert("Invalid task number. Please enter a valid task number.");
+        }
+    }
+  
+    displayTasks();
+}
+
+function displayTasks() {
+    var taskList = document.getElementById("taskList");
+    taskList.innerHTML = "";
+
+    if (taskList.style.display === "none" || taskList.style.display === "") {
+        for (var i = 0; i < tasks.length; i++) {
+            var listItem = document.createElement("li");
+            listItem.textContent = "Task " + (i + 1) + ": " + tasks[i];
+            taskList.appendChild(listItem);
+        }
+        taskList.style.display = "block";
+    } else {
+        taskList.style.display = "none";
+    }
+}
+
+    </script>
+    </head>
+    <body>
+        <title>CSD 340 Development with HTML and CSS</title>
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <h2>This is an interactive To Do list. Type your task items in the text box, and click "Add". 
+            You will get a prompt confirming the task was added. Click the Display button to see the 
+            current list of items. Click on Delete Entry to remove a specific entry, or the most recent one. 
+        </h2>
+        <div return-button>
+            <a href="https://techevil441.github.io/csd-340/" class="return-button">Return to Class landing page</a>
+            </div>
+        <label for="taskInput">Task:</label>
+        <input type="text" id="taskInput">
+        <button onclick="addTask()">Add</button>
+        <button onclick="deleteEntry()">Delete Entry</button>
+        <button onclick="displayTasks()">Display</button>
+      
+    </div>
+        <hr>
+        <ul id="taskList"></ul>
+    </body>
+    </html>

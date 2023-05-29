@@ -1,0 +1,66 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+h1 {
+    color: #333;
+    font-size: 30px;
+    font-weight:1900;
+}
+
+h2 {
+    color: #2909a0;
+    font-size: 18px;
+}
+.label-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label-container label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.button-container {
+    margin-bottom: 10px;
+}
+
+.button-container button {
+    margin-right: 5px;
+}
+
+hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid #2b2a2a;
+}
+
+#taskList {
+    margin-top: 20px;
+    padding-top: 10px;
+    list-style-type: none;
+
+}
+
+#taskList {
+    display: none;
+}
+
+.return-button {
+    display: inline-block;
+
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;
+    margin-top: none;
+}
+
+
