@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+}
+
+.left,
+.right {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.left h3,
+.right h3 {
+  text-align: center;
+}
+.left button {
+  text-align: center;
+}
+
+.left ol {
+  margin-top: 0;
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 10px;
+  list-style-position: inside;
+}
+
+ul {
+  border: 1px dashed red;
+  border-radius: 15px;
+  padding: 10px;
+  list-style: bullet;
+  list-style-position: inside;
+}
+
+#last {
+  width: 100%;
+  margin-top: 60px;
+  height: 200px;
+  background-color: #f2f2f2;
+}
+
+a.back {
+  float: right;
+}
+
+a.back:hover {
+  text-decoration: underline;
+}
